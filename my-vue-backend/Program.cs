@@ -1,9 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using my_vue_backend;  
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+// Configure Entity Framework Core to use PostgreSQL
+builder.Services.AddDbContext<PatientContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("PatientDatabase")));
+
+// Swagger/OpenAPI configuration (if using)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

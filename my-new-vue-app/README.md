@@ -1,24 +1,12 @@
-# my-new-vue-app
+# My Vue.js and C# Project
 
-## Project setup
-```
-npm install
-```
+## Project Description
+This project is a web application built using Vue.js for the frontend and C# for the backend. It demonstrates basic functionalities such as retrieving and submitting data to a PostgreSQL database.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Getting Started
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Prerequisites
+- Node.js
+- npm
+- .NET Core (for C# backend)
+- PostgreSQL Database
